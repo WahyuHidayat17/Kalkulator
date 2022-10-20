@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_animation">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:shadowColor="@android:color/holo_green_dark"
+        android:shadowDx="12"
+        android:shadowDy="12"
+        android:shadowRadius="8"
+        android:text="KALKULATOR BIDANG DATAR"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/persegi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/holo_green_light"
+        android:onClick="Persegi"
+        android:text="Persegi"
+        android:textColor="@color/deep_purple_500"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/segitiga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/persegi"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/holo_red_dark"
+        android:onClick="Segitiga"
+        android:text="SEGITIGA"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/lingkaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/segitiga"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/holo_blue_bright"
+        android:onClick="Lingkaran"
+        android:text="LINGKARAN"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/keluar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lingkaran"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/button_esc"
+        android:onClick="keluar"
+        android:padding="10dp"
+        android:shadowColor="@android:color/holo_orange_dark"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="20"
+        android:text="KELUAR"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="40sp"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

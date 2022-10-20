@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_animation">
+
+
+<TextView
+    android:id="@+id/LingkaranV1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:text="LINGKARAN"
+    android:textAlignment="center"
+    android:textColor="#fff"
+    android:textSize="36sp"
+    android:textStyle="bold"
+    android:shadowColor="#700"
+    android:shadowDx="12"
+    android:shadowDy="12"
+    android:shadowRadius="8"
+    tools:ignore="HardcodedText" />
+
+    <TableLayout
+        android:id="@+id/LingkaranTb1"
+        android:layout_below="@+id/LingkaranV1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp">
+        <TableRow
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jari - jari (r) : "
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/jari"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fff"
+                android:ems="20"
+                android:textSize="22sp"
+                android:textColor="#fff"
+                android:inputType="number"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LingkaranTb1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/holo_green_light"
+        android:onClick="keliling3"
+        android:text="HITUNG"
+        android:textColor="@android:color/background_dark"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/LingkaranV2"
+        android:layout_below="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:text="HASIL"/>
+
+    <TableLayout
+        android:id="@+id/LingkaranTb2"
+        android:layout_below="@+id/LingkaranV2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <TableRow
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+            <TextView
+                android:id="@+id/keliling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kelliling"
+                android:textSize="22sp"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" : "
+                android:textSize="22sp"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/hasilkeliling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_green_light"
+                android:ems="15"
+                android:paddingStart="5dp"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="10dp">
+            <TextView
+                android:id="@+id/luas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Luas"
+                android:textSize="22sp"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" : "
+                android:textSize="22sp"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/hasilluas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_green_light"
+                android:ems="15"
+                android:paddingStart="5dp"
+                android:textColor="#fff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/kembali"
+        android:layout_below="@id/LingkaranTb2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="25sp"
+        android:text="KEMBALI"
+        android:onClick="kembali"/>
+
+</RelativeLayout>
